@@ -1,0 +1,27 @@
+.switch-box{
+    width: 15%;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.3);
+    transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);  
+}
+.switch-btn{
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    line-height: 25px;
+    transition: 0.2s;
+    font-size: 12px;
+}
+.addSwitchBox{
+    background: rgba(255, 255, 255, 0.6);
+}
+.addSwitchBtn{
+    transform: translateX(100%);
+}

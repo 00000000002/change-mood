@@ -1,0 +1,50 @@
+{
+    "manifest_version":2,
+    "name":"随主页",
+    "version":"1.0",
+    "description":"一个简畅的浏览器主页",
+    "author":"gqq",
+    "icons":{
+        "16":"img/icon.png",
+        "48":"img/icon.png",
+        "128":"img/icon.png"
+    },
+
+    // 小图标的行为
+    "browser_action":{
+        "default_icon":"img/icon.png",
+        "default_title":"心主页1.0"
+        //"default_popup":"main.html"
+    },
+    // 后台页面
+    //"background":{
+    //    "page":"back.html"
+    //},
+    // 权限
+    //"permissions":[
+        // 添加右键菜单功能
+    //    "contextMenus",
+    //    "tabs",
+    //    "*://*/*",
+    //    "http://*/*",
+    //    "https://*/*"
+    //],
+    // 向网页内注入js代码
+    "content_scripts":[
+        {
+            // 所有链接都匹配
+            "matches":["<all_urls>"],
+            // 需要注入的js地址
+            "js":["js/baidu.js"],
+            // 加载完成之后运行文档
+            "run_at":"document_start"
+        }
+    ],
+    // 设置自己的网页首页
+     "chrome_url_overrides":{
+        "newtab":"frontPage/home.html"
+    },
+    "content_security_policy": "script-src 'self' https://api.forismatic.com https://v1.hitokoto.cn ;object-src 'self' srcript-url 'unsafe-inline'"
+   
+    
+}

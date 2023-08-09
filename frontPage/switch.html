@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+    <style>
+        .switch-box{
+            width: 60px;
+            height: 20px;
+            background: rgb(172, 172, 172);
+            transition: 0.2s;
+        }
+        .switch-btn{
+            width: 50%;
+            height: 100%;
+            background: rgb(95, 164, 230);
+            cursor: pointer;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+            transition: 0.2s;
+            font-size: 12px;
+        }
+        .addSwitchBox{
+            background: rgb(90, 209, 60);
+        }
+        .addSwitchBtn{
+            transform: translateX(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="switch-box">
+        <div class="switch-btn">关</div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<script>
+    $(function(){
+
+        var i=0;
+        $(".switch-btn").click(function(){
+            if(i == 0){
+                $(".switch-box").addClass("addSwitchBox");
+                $(".switch-btn").addClass("addSwitchBtn").text("开");
+                
+                i = 1;
+                console.log(1);
+            }else{
+                $(".switch-box").removeClass("addSwitchBox");
+                $(".switch-btn").removeClass("addSwitchBtn").text("关");
+                i =0;
+                console.log(0);
+            }
+            
+        });
+    });
+</script>
+</html>

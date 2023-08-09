@@ -1,0 +1,12 @@
+.body-three::-webkit-scrollbar,
+.long-box>div::-webkit-scrollbar{
+	width: 3px;
+}
+.body-three::-webkit-scrollbar-button,
+.long-box>div::-webkit-scrollbar-button{
+	height: 0;
+}
+.body-three::-webkit-scrollbar-thumb,
+.long-box>div::-webkit-scrollbar-thumb{
+	background: lightsalmon;
+}

@@ -1,0 +1,81 @@
+.testName{
+    width: 25%;
+    font-size: 12px;
+    padding: 5px;
+}
+
+
+/***************************************************************************/
+
+.loadeBox{
+	/* background-color: white; */
+	width: 75%;
+	position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);    
+	height: 40px;
+
+}
+.bar,
+.bar2,
+.bar3,
+.bar4{
+	width: 70%;
+	height: 3px;
+	border-radius: 10px;
+	background: rgb(97, 97, 97);
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+	/* left: 200px; */
+}
+.radio,
+.radio2,
+.radio3,
+.radio4{
+	width: 1px;
+	height: 3px;
+	border-radius: 50%;
+	background: rgb(97, 97, 97);
+	position: absolute;
+	left: 0;
+	/* left: -2.5px; */
+}
+.bigRadio{
+	width: 10px;
+	height: 10px;
+	background: rgb(97, 97, 97);
+	border-radius: 50%;
+	position: absolute;
+	top: -4px;
+	left: -5px;
+}
+.loading,
+.loading2,
+.loading3,
+.loading4{
+	height: 3px;
+	background: rgba(255, 255, 255, 0.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.title,
+.title2,
+.title3,
+.title4{
+	width: 16%;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.1);
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0,-50%);
+	line-height: 20px;
+	text-align: center;
+	color: white;
+    font-size: 12px;
+    padding: 5px;
+}
